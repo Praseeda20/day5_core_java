@@ -11,13 +11,13 @@ public class TestAccount {
 		kathy.setName("Kathy");
 		kathy.setAge(21);
 		
-		Account smithAc=new Account();
+		Account smithAc=new AccMethods();
 		smithAc.setAccNum(accNum++);
 		smithAc.setBalance(2000);
 		smithAc.setAccHolder(smith);
 		
 		
-		Account kathyAc=new Account();
+		Account kathyAc=new AccMethods();
 		kathyAc.setAccNum(accNum++);
 		kathyAc.setBalance(3000);
 		kathyAc.setAccHolder(kathy);

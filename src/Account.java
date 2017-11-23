@@ -1,5 +1,5 @@
 
-public class Account {
+public abstract class Account {
 	private long accNum;
 	private double balance;
 	private PersonDetail accHolder;
@@ -23,21 +23,15 @@ public class Account {
 		this.accHolder = accHolder;
 	}
 	
-	public void deposit(double amt)
-	{
+	public void deposit(double amt){	
 		System.out.println("Your balance was: "+balance);
 		balance+=amt;
 		System.out.println("Deposit Amount: "+amt);
 		System.out.println("Your new balance is: "+balance);
 	}
 	
-	public void withdraw(double amt)
-	{
-		System.out.println("Withdrawal Amount: "+amt);
-		System.out.println("Your Balance before withdrawal: "+balance);
-		balance-=amt;
-		System.out.println("Balance after withdrawal is: "+balance);
-	}
+	public abstract void withdraw(double amt);
+	
 	
 	@Override
 	public String toString() {
