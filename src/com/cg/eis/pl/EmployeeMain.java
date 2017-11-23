@@ -21,7 +21,6 @@ public class EmployeeMain {
 		
 		System.out.println("Enter the employee Designation: ");
 		String empDesgn=sc.nextLine();
-	    empDesgn+=sc.nextLine();
 		
 		emp=new Employee(empId,empName,empSal,empDesgn);
 		System.out.println(emps.getInsuranceScheme(emp));
